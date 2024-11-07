@@ -1,4 +1,4 @@
-# TrabalhoA2
+# TrabalhoA2 - Emerson Serrou Camy
 
 ## Endpoints da API
 
