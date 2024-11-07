@@ -38,3 +38,8 @@ A API expõe os seguintes endpoints para manipulação das entidades:
 - `POST /itenspedido`: Cria um novo item de pedido.
 - `PUT /itenspedido/{id}`: Atualiza um item de pedido existente.
 - `DELETE /itenspedido/{id}`: Exclui um item de pedido.
+
+## Configuração do Banco de Dados
+
+A configuração do banco de dados no arquivo `application.properties` utiliza um banco de dados H2 em memória para armazenar dados durante a execução. 
+Um script SQL (`data.sql`) é incluído para inserir dados de exemplo automaticamente ao iniciar a aplicação, facilitando os testes e a visualização dos dados iniciais no sistema.
