@@ -2,7 +2,7 @@
 
 ## Relação entre Entidades
 
-A imagem abaixo representa a relação entre as entidades `Pedido`, `ItemPedido` e `Produto`, conforme discutido em sala de aula:
+A imagem abaixo representa a relação entre as entidades `Pedido`, `ItemPedido` e `Produto`:
 
 ![Relação entre Pedido, ItemPedido e Produto](A2/Relação.jpeg)
 
