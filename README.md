@@ -2,7 +2,7 @@
 
 Endpoints da API
 A API expõe os seguintes endpoints para manipulação das entidades:
-
+/n\n
 Clientes
 GET /clientes: Lista todos os clientes.
 GET /clientes/{codigo}: Recupera um cliente específico pelo código.
