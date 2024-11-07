@@ -1,4 +1,10 @@
-# TrabalhoA2 - Emerson Serrou Camy
+# TrabalhoA2
+
+## Relação entre Entidades
+
+A imagem abaixo representa a relação entre as entidades `Pedido`, `ItemPedido` e `Produto`, conforme discutido em sala de aula:
+
+![Relação entre Pedido, ItemPedido e Produto](A2/Relação.jpeg)
 
 ## Endpoints da API
 
@@ -41,5 +47,4 @@ A API expõe os seguintes endpoints para manipulação das entidades:
 
 ## Configuração do Banco de Dados
 
-A configuração do banco de dados no arquivo `application.properties` utiliza um banco de dados H2 em memória para armazenar dados durante a execução. 
-Um script SQL (`data.sql`) é incluído para inserir dados de exemplo automaticamente ao iniciar a aplicação, facilitando os testes e a visualização dos dados iniciais no sistema.
+A configuração do banco de dados no arquivo `application.properties` utiliza um banco de dados H2 em memória para armazenar dados durante a execução. Um script SQL (`data.sql`) é incluído para inserir dados de exemplo automaticamente ao iniciar a aplicação, facilitando os testes e a visualização dos dados iniciais no sistema.
