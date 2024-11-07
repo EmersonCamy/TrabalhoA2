@@ -46,20 +46,23 @@ A API expõe os seguintes endpoints para manipulação das entidades:
 - `DELETE /itenspedido/{id}`: Exclui um item de pedido.
 
 ## Configuração do Banco de Dados
-A aplicação está configurada para utilizar um banco de dados H2 em memória, simplificando a execução e testes. Durante a inicialização, dados de exemplo são automaticamente carregados, o que permite visualizar informações básicas na interface sem a necessidade de inserções manuais.
 
-Arquivos importantes para a configuração:
-Arquivo de configuração: application.properties
-Local: A2/src/main/resources/application.properties
-Este arquivo contém as configurações principais para o banco de dados e outras propriedades da aplicação.
+A aplicação utiliza um banco de dados H2 em memória, facilitando o desenvolvimento e testes com dados temporários carregados automaticamente.
 
-Script de inicialização do banco de dados: data.sql
-Local: A2/src/main/resources/data.sql
-Este script SQL insere dados iniciais no banco de dados H2 durante a execução, facilitando os testes e a análise da aplicação.
+### Estrutura de Configuração
+- **Arquivo de Configuração Principal**: `application.properties`  
+  Configura as propriedades essenciais do banco de dados e da aplicação.  
+  Caminho: `A2/src/main/resources/application.properties`
 
-Configurações padrão
-Banco de dados: H2 em memória (jdbc:h2:mem:testdb)
-Usuário: sa
-Senha: (em branco)
-Console H2: Habilitado para facilitar a visualização dos dados armazenados (/h2-console)
-Com esses dados de configuração, basta executar a aplicação e acessar a URL do console H2 para verificar os dados carregados do script data.sql
+- **Script de Dados Iniciais**: `data.sql`  
+  Contém instruções SQL para carregar dados de exemplo automaticamente ao iniciar a aplicação.  
+  Caminho: `A2/src/main/resources/data.sql`
+
+### Detalhes do Banco de Dados
+- **Banco de Dados**: H2 em memória (`jdbc:h2:mem:testdb`)
+- **Console H2**: Acessível em `/h2-console` para visualização e verificação dos dados.
+- **Usuário**: `sa`
+- **Senha**: *(em branco)*
+
+Com essas configurações, basta iniciar a aplicação e acessar o console H2 para visualizar os dados carregados do `data.sql`.
+
