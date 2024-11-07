@@ -46,5 +46,20 @@ A API expõe os seguintes endpoints para manipulação das entidades:
 - `DELETE /itenspedido/{id}`: Exclui um item de pedido.
 
 ## Configuração do Banco de Dados
+A aplicação está configurada para utilizar um banco de dados H2 em memória, simplificando a execução e testes. Durante a inicialização, dados de exemplo são automaticamente carregados, o que permite visualizar informações básicas na interface sem a necessidade de inserções manuais.
 
-A configuração do banco de dados no arquivo `application.properties` utiliza um banco de dados H2 em memória para armazenar dados durante a execução. Um script SQL (`data.sql`) é incluído para inserir dados de exemplo automaticamente ao iniciar a aplicação, facilitando os testes e a visualização dos dados iniciais no sistema.
+Arquivos importantes para a configuração:
+Arquivo de configuração: application.properties
+Local: A2/src/main/resources/application.properties
+Este arquivo contém as configurações principais para o banco de dados e outras propriedades da aplicação.
+
+Script de inicialização do banco de dados: data.sql
+Local: A2/src/main/resources/data.sql
+Este script SQL insere dados iniciais no banco de dados H2 durante a execução, facilitando os testes e a análise da aplicação.
+
+Configurações padrão
+Banco de dados: H2 em memória (jdbc:h2:mem:testdb)
+Usuário: sa
+Senha: (em branco)
+Console H2: Habilitado para facilitar a visualização dos dados armazenados (/h2-console)
+Com esses dados de configuração, basta executar a aplicação e acessar a URL do console H2 para verificar os dados carregados do script data.sql
